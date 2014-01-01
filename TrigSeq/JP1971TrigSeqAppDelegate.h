@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JP1971TrigSeqAppDelegate : UIResponder <UIApplicationDelegate>
+@interface JP1971TrigSeqAppDelegate : NSObject <UIApplicationDelegate> {
+    NSString *port;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (nonatomic, retain) NSString *port;
 
 @end

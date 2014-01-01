@@ -21,6 +21,8 @@
 		7C9B3B801871BFD4000C998A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9B3B621871BFD4000C998A /* UIKit.framework */; };
 		7C9B3B881871BFD4000C998A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C9B3B861871BFD4000C998A /* InfoPlist.strings */; };
 		7C9B3B8A1871BFD4000C998A /* TrigSeqTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9B3B891871BFD4000C998A /* TrigSeqTests.m */; };
+		7C9B3B9518723F8B000C998A /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9B3B9418723F8B000C998A /* AsyncUdpSocket.m */; };
+		7C9B3B9718724168000C998A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9B3B9618724168000C998A /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		7C9B3B851871BFD4000C998A /* TrigSeqTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrigSeqTests-Info.plist"; sourceTree = "<group>"; };
 		7C9B3B871871BFD4000C998A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7C9B3B891871BFD4000C998A /* TrigSeqTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrigSeqTests.m; sourceTree = "<group>"; };
+		7C9B3B9318723F34000C998A /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		7C9B3B9418723F8B000C998A /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; usesTabs = 0; };
+		7C9B3B9618724168000C998A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +68,7 @@
 				7C9B3B611871BFD4000C998A /* CoreGraphics.framework in Frameworks */,
 				7C9B3B631871BFD4000C998A /* UIKit.framework in Frameworks */,
 				7C9B3B5F1871BFD4000C998A /* Foundation.framework in Frameworks */,
+				7C9B3B9718724168000C998A /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +107,7 @@
 		7C9B3B5D1871BFD4000C998A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7C9B3B9618724168000C998A /* CFNetwork.framework */,
 				7C9B3B5E1871BFD4000C998A /* Foundation.framework */,
 				7C9B3B601871BFD4000C998A /* CoreGraphics.framework */,
 				7C9B3B621871BFD4000C998A /* UIKit.framework */,
@@ -112,6 +119,8 @@
 		7C9B3B641871BFD4000C998A /* TrigSeq */ = {
 			isa = PBXGroup;
 			children = (
+				7C9B3B9318723F34000C998A /* AsyncUdpSocket.h */,
+				7C9B3B9418723F8B000C998A /* AsyncUdpSocket.m */,
 				7C9B3B6D1871BFD4000C998A /* JP1971TrigSeqAppDelegate.h */,
 				7C9B3B6E1871BFD4000C998A /* JP1971TrigSeqAppDelegate.m */,
 				7C9B3B701871BFD4000C998A /* Main.storyboard */,
@@ -253,6 +262,7 @@
 				7C9B3B6F1871BFD4000C998A /* JP1971TrigSeqAppDelegate.m in Sources */,
 				7C9B3B6B1871BFD4000C998A /* main.m in Sources */,
 				7C9B3B751871BFD4000C998A /* JP1971TrigSeqViewController.m in Sources */,
+				7C9B3B9518723F8B000C998A /* AsyncUdpSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
