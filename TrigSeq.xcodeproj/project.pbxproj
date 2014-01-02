@@ -23,6 +23,7 @@
 		7C9B3B8A1871BFD4000C998A /* TrigSeqTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9B3B891871BFD4000C998A /* TrigSeqTests.m */; };
 		7C9B3B9518723F8B000C998A /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9B3B9418723F8B000C998A /* AsyncUdpSocket.m */; };
 		7C9B3B9718724168000C998A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9B3B9618724168000C998A /* CFNetwork.framework */; };
+		7C9B3B9A1874BE6C000C998A /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9B3B991874BE6C000C998A /* GCDAsyncUdpSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		7C9B3B9318723F34000C998A /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
 		7C9B3B9418723F8B000C998A /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; usesTabs = 0; };
 		7C9B3B9618724168000C998A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7C9B3B981874BE2C000C998A /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		7C9B3B991874BE6C000C998A /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,11 +124,13 @@
 			children = (
 				7C9B3B9318723F34000C998A /* AsyncUdpSocket.h */,
 				7C9B3B9418723F8B000C998A /* AsyncUdpSocket.m */,
+				7C9B3B981874BE2C000C998A /* GCDAsyncUdpSocket.h */,
+				7C9B3B991874BE6C000C998A /* GCDAsyncUdpSocket.m */,
 				7C9B3B6D1871BFD4000C998A /* JP1971TrigSeqAppDelegate.h */,
 				7C9B3B6E1871BFD4000C998A /* JP1971TrigSeqAppDelegate.m */,
-				7C9B3B701871BFD4000C998A /* Main.storyboard */,
 				7C9B3B731871BFD4000C998A /* JP1971TrigSeqViewController.h */,
 				7C9B3B741871BFD4000C998A /* JP1971TrigSeqViewController.m */,
+				7C9B3B701871BFD4000C998A /* Main.storyboard */,
 				7C9B3B761871BFD4000C998A /* Images.xcassets */,
 				7C9B3B651871BFD4000C998A /* Supporting Files */,
 			);
@@ -260,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C9B3B6F1871BFD4000C998A /* JP1971TrigSeqAppDelegate.m in Sources */,
+				7C9B3B9A1874BE6C000C998A /* GCDAsyncUdpSocket.m in Sources */,
 				7C9B3B6B1871BFD4000C998A /* main.m in Sources */,
 				7C9B3B751871BFD4000C998A /* JP1971TrigSeqViewController.m in Sources */,
 				7C9B3B9518723F8B000C998A /* AsyncUdpSocket.m in Sources */,
