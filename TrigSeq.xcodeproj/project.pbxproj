@@ -21,9 +21,9 @@
 		7C9B3B801871BFD4000C998A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9B3B621871BFD4000C998A /* UIKit.framework */; };
 		7C9B3B881871BFD4000C998A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C9B3B861871BFD4000C998A /* InfoPlist.strings */; };
 		7C9B3B8A1871BFD4000C998A /* TrigSeqTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9B3B891871BFD4000C998A /* TrigSeqTests.m */; };
-		7C9B3B9518723F8B000C998A /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9B3B9418723F8B000C998A /* AsyncUdpSocket.m */; };
 		7C9B3B9718724168000C998A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9B3B9618724168000C998A /* CFNetwork.framework */; };
 		7C9B3B9A1874BE6C000C998A /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9B3B991874BE6C000C998A /* GCDAsyncUdpSocket.m */; };
+		7C9B3B9D1874F6A9000C998A /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9B3B9C1874F6A9000C998A /* GCDAsyncSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +56,11 @@
 		7C9B3B851871BFD4000C998A /* TrigSeqTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrigSeqTests-Info.plist"; sourceTree = "<group>"; };
 		7C9B3B871871BFD4000C998A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7C9B3B891871BFD4000C998A /* TrigSeqTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrigSeqTests.m; sourceTree = "<group>"; };
-		7C9B3B9318723F34000C998A /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
-		7C9B3B9418723F8B000C998A /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; usesTabs = 0; };
 		7C9B3B9618724168000C998A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		7C9B3B981874BE2C000C998A /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
 		7C9B3B991874BE6C000C998A /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		7C9B3B9B1874F654000C998A /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		7C9B3B9C1874F6A9000C998A /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +122,6 @@
 		7C9B3B641871BFD4000C998A /* TrigSeq */ = {
 			isa = PBXGroup;
 			children = (
-				7C9B3B9318723F34000C998A /* AsyncUdpSocket.h */,
-				7C9B3B9418723F8B000C998A /* AsyncUdpSocket.m */,
 				7C9B3B981874BE2C000C998A /* GCDAsyncUdpSocket.h */,
 				7C9B3B991874BE6C000C998A /* GCDAsyncUdpSocket.m */,
 				7C9B3B6D1871BFD4000C998A /* JP1971TrigSeqAppDelegate.h */,
@@ -133,6 +131,8 @@
 				7C9B3B701871BFD4000C998A /* Main.storyboard */,
 				7C9B3B761871BFD4000C998A /* Images.xcassets */,
 				7C9B3B651871BFD4000C998A /* Supporting Files */,
+				7C9B3B9B1874F654000C998A /* GCDAsyncSocket.h */,
+				7C9B3B9C1874F6A9000C998A /* GCDAsyncSocket.m */,
 			);
 			path = TrigSeq;
 			sourceTree = "<group>";
@@ -265,10 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C9B3B6F1871BFD4000C998A /* JP1971TrigSeqAppDelegate.m in Sources */,
+				7C9B3B9D1874F6A9000C998A /* GCDAsyncSocket.m in Sources */,
 				7C9B3B9A1874BE6C000C998A /* GCDAsyncUdpSocket.m in Sources */,
 				7C9B3B6B1871BFD4000C998A /* main.m in Sources */,
 				7C9B3B751871BFD4000C998A /* JP1971TrigSeqViewController.m in Sources */,
-				7C9B3B9518723F8B000C998A /* AsyncUdpSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

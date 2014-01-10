@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AsyncUdpSocket.h"
+#import "GCDAsyncSocket.h"
+#import "GCDAsyncUdpSocket.h"
 
-@interface JP1971TrigSeqViewController : UIViewController <AsyncUdpSocketDelegate>  {
+@interface JP1971TrigSeqViewController : UIViewController <GCDAsyncSocketDelegate, GCDAsyncUdpSocketDelegate, UITextFieldDelegate>  {
+    float                   bpm;
+    GCDAsyncSocket      *socket;
+    //    GCDAsyncUdpSocket   *socket;
     int                 led;
+    int                 startStopBool;
     int                 step01Active;
     int                 step02Active;
     int                 step03Active;
@@ -43,6 +48,39 @@
     int                 step30Active;
     int                 step31Active;
     int                 step32Active;
+    int                 step33Active;
+    int                 step34Active;
+    int                 step35Active;
+    int                 step36Active;
+    int                 step37Active;
+    int                 step38Active;
+    int                 step39Active;
+    int                 step40Active;
+    int                 step41Active;
+    int                 step42Active;
+    int                 step43Active;
+    int                 step44Active;
+    int                 step45Active;
+    int                 step46Active;
+    int                 step47Active;
+    int                 step48Active;
+    int                 step49Active;
+    int                 step50Active;
+    int                 step51Active;
+    int                 step52Active;
+    int                 step53Active;
+    int                 step54Active;
+    int                 step55Active;
+    int                 step56Active;
+    int                 step57Active;
+    int                 step58Active;
+    int                 step59Active;
+    int                 step60Active;
+    int                 step61Active;
+    int                 step62Active;
+    int                 step63Active;
+    int                 step64Active;
+    IBOutlet UIButton   *startStop;
     IBOutlet UIButton   *step01;
     IBOutlet UIButton   *step02;
     IBOutlet UIButton   *step03;
@@ -75,26 +113,59 @@
     IBOutlet UIButton   *step30;
     IBOutlet UIButton   *step31;
     IBOutlet UIButton   *step32;
-    UIImageView			*led01;
-	UIImageView			*led02;
-	UIImageView			*led03;
-	UIImageView			*led04;
-	UIImageView			*led05;
-	UIImageView			*led06;
-	UIImageView			*led07;
-	UIImageView			*led08;
-    UIImageView			*led09;
-	UIImageView			*led10;
-	UIImageView			*led11;
-	UIImageView			*led12;
-	UIImageView			*led13;
-	UIImageView			*led14;
-	UIImageView			*led15;
-	UIImageView			*led16;
-    AsyncUdpSocket      *socket;
-    NSTimer				*timer;
+    IBOutlet UIButton   *step33;
+    IBOutlet UIButton   *step34;
+    IBOutlet UIButton   *step35;
+    IBOutlet UIButton   *step36;
+    IBOutlet UIButton   *step37;
+    IBOutlet UIButton   *step38;
+    IBOutlet UIButton   *step39;
+    IBOutlet UIButton   *step40;
+    IBOutlet UIButton   *step41;
+    IBOutlet UIButton   *step42;
+    IBOutlet UIButton   *step43;
+    IBOutlet UIButton   *step44;
+    IBOutlet UIButton   *step45;
+    IBOutlet UIButton   *step46;
+    IBOutlet UIButton   *step47;
+    IBOutlet UIButton   *step48;
+    IBOutlet UIButton   *step49;
+    IBOutlet UIButton   *step50;
+    IBOutlet UIButton   *step51;
+    IBOutlet UIButton   *step52;
+    IBOutlet UIButton   *step53;
+    IBOutlet UIButton   *step54;
+    IBOutlet UIButton   *step55;
+    IBOutlet UIButton   *step56;
+    IBOutlet UIButton   *step57;
+    IBOutlet UIButton   *step58;
+    IBOutlet UIButton   *step59;
+    IBOutlet UIButton   *step60;
+    IBOutlet UIButton   *step61;
+    IBOutlet UIButton   *step62;
+    IBOutlet UIButton   *step63;
+    IBOutlet UIButton   *step64;
+    IBOutlet UITextField    *bpmField;
+    NSTimer                 *timer;
+    UIImageView             *led01;
+	UIImageView             *led02;
+	UIImageView             *led03;
+	UIImageView             *led04;
+	UIImageView             *led05;
+	UIImageView             *led06;
+	UIImageView             *led07;
+	UIImageView             *led08;
+    UIImageView             *led09;
+	UIImageView             *led10;
+	UIImageView             *led11;
+	UIImageView             *led12;
+	UIImageView             *led13;
+	UIImageView             *led14;
+	UIImageView             *led15;
+	UIImageView             *led16;
 }
 
+-(IBAction)startStopButtonPressed;
 -(IBAction)step01ButtonPressed;
 -(IBAction)step02ButtonPressed;
 -(IBAction)step03ButtonPressed;
@@ -127,5 +198,37 @@
 -(IBAction)step30ButtonPressed;
 -(IBAction)step31ButtonPressed;
 -(IBAction)step32ButtonPressed;
+-(IBAction)step33ButtonPressed;
+-(IBAction)step34ButtonPressed;
+-(IBAction)step35ButtonPressed;
+-(IBAction)step36ButtonPressed;
+-(IBAction)step37ButtonPressed;
+-(IBAction)step38ButtonPressed;
+-(IBAction)step39ButtonPressed;
+-(IBAction)step40ButtonPressed;
+-(IBAction)step41ButtonPressed;
+-(IBAction)step42ButtonPressed;
+-(IBAction)step43ButtonPressed;
+-(IBAction)step44ButtonPressed;
+-(IBAction)step45ButtonPressed;
+-(IBAction)step46ButtonPressed;
+-(IBAction)step47ButtonPressed;
+-(IBAction)step48ButtonPressed;
+-(IBAction)step49ButtonPressed;
+-(IBAction)step50ButtonPressed;
+-(IBAction)step51ButtonPressed;
+-(IBAction)step52ButtonPressed;
+-(IBAction)step53ButtonPressed;
+-(IBAction)step54ButtonPressed;
+-(IBAction)step55ButtonPressed;
+-(IBAction)step56ButtonPressed;
+-(IBAction)step57ButtonPressed;
+-(IBAction)step58ButtonPressed;
+-(IBAction)step59ButtonPressed;
+-(IBAction)step60ButtonPressed;
+-(IBAction)step61ButtonPressed;
+-(IBAction)step62ButtonPressed;
+-(IBAction)step63ButtonPressed;
+-(IBAction)step64ButtonPressed;
 
 @end
