@@ -752,6 +752,9 @@
     //Initialize timer
     if( startStopBool == 0) {
         timer = [NSTimer scheduledTimerWithTimeInterval:(bpm) target:self selector:@selector(time) userInfo:nil repeats:YES];
+        // Adding timer to common run loop mode to improve timing per this post
+        // http://stackoverflow.com/questions/2715844/placing-an-nstimer-in-a-separate-thread
+        [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
         [startStop setBackgroundColor:[UIColor redColor]];
         startStopBool = 1;
     } else if ( startStopBool == 1 ) {
