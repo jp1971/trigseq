@@ -1477,68 +1477,51 @@
         //All
         if ( step01Active == 1 && step17Active == 1 && step33Active == 1 && step49Active == 1 ) {
             [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:1];
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:17];
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:33];
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:49];
         }
         // Triple permutations
         else if ( step01Active == 1 && step17Active == 1 && step33Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:1];
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:17];
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:33];
+            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
         }
         else if ( step01Active == 1 && step17Active == 1 && step49Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:1];
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:17];
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:49];
+            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
         }
         else if ( step01Active == 1 && step33Active == 1 && step49Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:1];
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:33];
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:49];
+            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:1];
         }
         else if ( step17Active == 1 && step33Active == 1 && step49Active == 1 ) {
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:17];
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:33];
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:49];
+            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:17];
         }
         // Double permutations
         else if ( step01Active == 1 && step17Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:1];
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:17];
+            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:1];
         }
         else if ( step01Active == 1 && step33Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:1];
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:33];
+            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:1];
         }
         else if ( step01Active == 1 && step49Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:1];
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:49];
+            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:1];
         }
         else if ( step17Active == 1 && step33Active == 1 ) {
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:17];
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:33];
+            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:17];
         }
         else if ( step17Active == 1 && step49Active == 1 ) {
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:17];
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:49];
+            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:17];
         }
         else if ( step33Active == 1 && step49Active == 1 ) {
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:33];
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:49];
+            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:33];
         }
         // Single permutations
         else if ( step01Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:1];
+            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:1];
         }
         else if ( step17Active == 1 ) {
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:17];
+            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:17];
         }
         else if ( step33Active == 1 ) {
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:33];
+            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:33];
         }
         else if ( step49Active == 1 ) {
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:49];
+            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:49];
         }
     } else if ( led == 2 ) {
         led01.backgroundColor = [UIColor clearColor];
