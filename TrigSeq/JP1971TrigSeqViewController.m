@@ -1480,48 +1480,48 @@
         }
         // Triple combinations
         else if ( step01Active == 1 && step17Active == 1 && step33Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
+            [socket writeData:[@"b" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
         }
         else if ( step01Active == 1 && step17Active == 1 && step49Active == 1 ) {
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
+            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
         }
         else if ( step01Active == 1 && step33Active == 1 && step49Active == 1 ) {
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
+            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
         }
         else if ( step17Active == 1 && step33Active == 1 && step49Active == 1 ) {
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
+            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
         }
         // Double combinations
         else if ( step01Active == 1 && step17Active == 1 ) {
-            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
+            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
         }
         else if ( step01Active == 1 && step33Active == 1 ) {
-            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
+            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
         }
         else if ( step01Active == 1 && step49Active == 1 ) {
-            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
+            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
         }
         else if ( step17Active == 1 && step33Active == 1 ) {
-            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
+            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
         }
         else if ( step17Active == 1 && step49Active == 1 ) {
-            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
+            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
         }
         else if ( step33Active == 1 && step49Active == 1 ) {
-            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
+            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
         }
         // Single combinations
         else if ( step01Active == 1 ) {
-            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
+            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
         }
         else if ( step17Active == 1 ) {
-            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
+            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
         }
         else if ( step33Active == 1 ) {
-            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
+            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
         }
         else if ( step49Active == 1 ) {
-            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
+            [socket writeData:[@"0" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
         }
     } else if ( led == 2 ) {
         led01.backgroundColor = [UIColor clearColor];
@@ -1533,48 +1533,48 @@
         }
         // Triple combinations
         else if ( step02Active == 1 && step18Active == 1 && step34Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
+            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
         }
         else if ( step02Active == 1 && step18Active == 1 && step50Active == 1 ) {
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
+            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
         }
         else if ( step02Active == 1 && step34Active == 1 && step50Active == 1 ) {
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
+            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
         }
         else if ( step18Active == 1 && step34Active == 1 && step50Active == 1 ) {
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
+            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
         }
         // Double combinations
         else if ( step02Active == 1 && step18Active == 1 ) {
-            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
+            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
         }
         else if ( step02Active == 1 && step34Active == 1 ) {
-            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
+            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
         }
         else if ( step02Active == 1 && step50Active == 1 ) {
-            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
+            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
         }
         else if ( step18Active == 1 && step34Active == 1 ) {
-            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
+            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
         }
         else if ( step18Active == 1 && step50Active == 1 ) {
-            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
+            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
         }
         else if ( step34Active == 1 && step50Active == 1 ) {
-            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
+            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
         }
         // Single combinations
         else if ( step02Active == 1 ) {
-            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
+            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
         }
         else if ( step18Active == 1 ) {
-            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
+            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
         }
         else if ( step34Active == 1 ) {
-            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
+            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
         }
         else if ( step50Active == 1 ) {
-            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
+            [socket writeData:[@"O" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
         }
     } else if ( led == 3 ) {
         led02.backgroundColor = [UIColor clearColor];
@@ -1586,48 +1586,48 @@
         }
         // Triple combinations
         else if ( step03Active == 1 && step19Active == 1 && step35Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
+            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
         }
         else if ( step03Active == 1 && step19Active == 1 && step51Active == 1 ) {
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
+            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
         }
         else if ( step03Active == 1 && step35Active == 1 && step51Active == 1 ) {
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
+            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
         }
         else if ( step19Active == 1 && step35Active == 1 && step51Active == 1 ) {
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
+            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
         }
         // Double combinations
         else if ( step03Active == 1 && step19Active == 1 ) {
-            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
+            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
         }
         else if ( step03Active == 1 && step35Active == 1 ) {
-            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
+            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
         }
         else if ( step03Active == 1 && step51Active == 1 ) {
-            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
+            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
         }
         else if ( step19Active == 1 && step35Active == 1 ) {
-            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
+            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
         }
         else if ( step19Active == 1 && step51Active == 1 ) {
-            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
+            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
         }
         else if ( step35Active == 1 && step51Active == 1 ) {
-            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
+            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
         }
         // Single combinations
         else if ( step03Active == 1 ) {
-            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
+            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
         }
         else if ( step19Active == 1 ) {
-            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
+            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
         }
         else if ( step35Active == 1 ) {
-            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
+            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
         }
         else if ( step51Active == 1 ) {
-            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
+            [socket writeData:[@"O" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
         }
     } else if ( led == 4 ) {
         led03.backgroundColor = [UIColor clearColor];
@@ -1639,48 +1639,48 @@
         }
         // Triple combinations
         else if ( step04Active == 1 && step20Active == 1 && step36Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
+            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
         }
         else if ( step04Active == 1 && step20Active == 1 && step52Active == 1 ) {
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
+            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
         }
         else if ( step04Active == 1 && step36Active == 1 && step52Active == 1 ) {
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
+            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
         }
         else if ( step20Active == 1 && step36Active == 1 && step52Active == 1 ) {
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
+            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
         }
         // Double combinations
         else if ( step04Active == 1 && step20Active == 1 ) {
-            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
+            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
         }
         else if ( step04Active == 1 && step36Active == 1 ) {
-            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
+            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
         }
         else if ( step04Active == 1 && step52Active == 1 ) {
-            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
+            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
         }
         else if ( step20Active == 1 && step36Active == 1 ) {
-            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
+            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
         }
         else if ( step20Active == 1 && step52Active == 1 ) {
-            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
+            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
         }
         else if ( step36Active == 1 && step52Active == 1 ) {
-            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
+            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
         }
         // Single combinations
         else if ( step04Active == 1 ) {
-            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
+            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
         }
         else if ( step20Active == 1 ) {
-            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
+            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
         }
         else if ( step36Active == 1 ) {
-            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
+            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
         }
         else if ( step52Active == 1 ) {
-            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
+            [socket writeData:[@"O" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
         }
     }  else if ( led == 5 ) {
         led04.backgroundColor = [UIColor clearColor];
@@ -1692,48 +1692,48 @@
         }
         // Triple combinations
         else if ( step05Active == 1 && step21Active == 1 && step37Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
+            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
         }
         else if ( step05Active == 1 && step21Active == 1 && step53Active == 1 ) {
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
+            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
         }
         else if ( step05Active == 1 && step37Active == 1 && step53Active == 1 ) {
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
+            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
         }
         else if ( step21Active == 1 && step37Active == 1 && step53Active == 1 ) {
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
+            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
         }
         // Double combinations
         else if ( step05Active == 1 && step21Active == 1 ) {
-            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
+            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
         }
         else if ( step05Active == 1 && step37Active == 1 ) {
-            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
+            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
         }
         else if ( step05Active == 1 && step53Active == 1 ) {
-            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
+            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
         }
         else if ( step21Active == 1 && step37Active == 1 ) {
-            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
+            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
         }
         else if ( step21Active == 1 && step53Active == 1 ) {
-            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
+            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
         }
         else if ( step37Active == 1 && step53Active == 1 ) {
-            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
+            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
         }
         // Single combinations
         else if ( step05Active == 1 ) {
-            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
+            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
         }
         else if ( step21Active == 1 ) {
-            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
+            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
         }
         else if ( step37Active == 1 ) {
-            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
+            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
         }
         else if ( step53Active == 1 ) {
-            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
+            [socket writeData:[@"O" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
         }
     } else if ( led == 6 ) {
         led05.backgroundColor = [UIColor clearColor];
@@ -1745,48 +1745,48 @@
         }
         // Triple combinations
         else if ( step06Active == 1 && step22Active == 1 && step38Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
+            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
         }
         else if ( step06Active == 1 && step22Active == 1 && step54Active == 1 ) {
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
+            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
         }
         else if ( step06Active == 1 && step38Active == 1 && step54Active == 1 ) {
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
+            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
         }
         else if ( step22Active == 1 && step38Active == 1 && step54Active == 1 ) {
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
+            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
         }
         // Double combinations
         else if ( step06Active == 1 && step22Active == 1 ) {
-            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
+            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
         }
         else if ( step06Active == 1 && step38Active == 1 ) {
-            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
+            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
         }
         else if ( step06Active == 1 && step54Active == 1 ) {
-            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
+            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
         }
         else if ( step22Active == 1 && step38Active == 1 ) {
-            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
+            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
         }
         else if ( step22Active == 1 && step54Active == 1 ) {
-            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
+            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
         }
         else if ( step38Active == 1 && step54Active == 1 ) {
-            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
+            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
         }
         // Single combinations
         else if ( step06Active == 1 ) {
-            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
+            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
         }
         else if ( step22Active == 1 ) {
-            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
+            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
         }
         else if ( step38Active == 1 ) {
-            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
+            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
         }
         else if ( step54Active == 1 ) {
-            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
+            [socket writeData:[@"O" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
         }
     } else if ( led == 7 ) {
         led06.backgroundColor = [UIColor clearColor];
@@ -1798,48 +1798,48 @@
         }
         // Triple combinations
         else if ( step07Active == 1 && step23Active == 1 && step39Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
+            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
         }
         else if ( step07Active == 1 && step23Active == 1 && step55Active == 1 ) {
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
+            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
         }
         else if ( step07Active == 1 && step39Active == 1 && step55Active == 1 ) {
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
+            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
         }
         else if ( step23Active == 1 && step39Active == 1 && step55Active == 1 ) {
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
+            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
         }
         // Double combinations
         else if ( step07Active == 1 && step23Active == 1 ) {
-            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
+            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
         }
         else if ( step07Active == 1 && step39Active == 1 ) {
-            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
+            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
         }
         else if ( step07Active == 1 && step55Active == 1 ) {
-            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
+            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
         }
         else if ( step23Active == 1 && step39Active == 1 ) {
-            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
+            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
         }
         else if ( step23Active == 1 && step55Active == 1 ) {
-            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
+            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
         }
         else if ( step39Active == 1 && step55Active == 1 ) {
-            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
+            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
         }
         // Single combinations
         else if ( step07Active == 1 ) {
-            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
+            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
         }
         else if ( step23Active == 1 ) {
-            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
+            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
         }
         else if ( step39Active == 1 ) {
-            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
+            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
         }
         else if ( step55Active == 1 ) {
-            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
+            [socket writeData:[@"O" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
         }
     } else if ( led == 8 ) {
         led07.backgroundColor = [UIColor clearColor];
@@ -1851,48 +1851,48 @@
         }
         // Triple combinations
         else if ( step08Active == 1 && step24Active == 1 && step40Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
+            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
         }
         else if ( step08Active == 1 && step24Active == 1 && step56Active == 1 ) {
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
+            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
         }
         else if ( step08Active == 1 && step40Active == 1 && step56Active == 1 ) {
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
+            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
         }
         else if ( step24Active == 1 && step40Active == 1 && step56Active == 1 ) {
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
+            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
         }
         // Double combinations
         else if ( step08Active == 1 && step24Active == 1 ) {
-            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
+            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
         }
         else if ( step08Active == 1 && step40Active == 1 ) {
-            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
+            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
         }
         else if ( step08Active == 1 && step56Active == 1 ) {
-            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
+            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
         }
         else if ( step24Active == 1 && step40Active == 1 ) {
-            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
+            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
         }
         else if ( step24Active == 1 && step56Active == 1 ) {
-            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
+            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
         }
         else if ( step40Active == 1 && step56Active == 1 ) {
-            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
+            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
         }
         // Single combinations
         else if ( step08Active == 1 ) {
-            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
+            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
         }
         else if ( step24Active == 1 ) {
-            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
+            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
         }
         else if ( step40Active == 1 ) {
-            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
+            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
         }
         else if ( step56Active == 1 ) {
-            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
+            [socket writeData:[@"O" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
         }
     } else if ( led == 9 ) {
         led08.backgroundColor = [UIColor clearColor];
@@ -1904,48 +1904,48 @@
         }
         // Triple combinations
         else if ( step09Active == 1 && step25Active == 1 && step41Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
+            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
         }
         else if ( step09Active == 1 && step25Active == 1 && step57Active == 1 ) {
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
+            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
         }
         else if ( step09Active == 1 && step41Active == 1 && step57Active == 1 ) {
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
+            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
         }
         else if ( step25Active == 1 && step41Active == 1 && step57Active == 1 ) {
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
+            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
         }
         // Double combinations
         else if ( step09Active == 1 && step25Active == 1 ) {
-            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
+            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
         }
         else if ( step09Active == 1 && step41Active == 1 ) {
-            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
+            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
         }
         else if ( step09Active == 1 && step57Active == 1 ) {
-            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
+            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
         }
         else if ( step25Active == 1 && step41Active == 1 ) {
-            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
+            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
         }
         else if ( step25Active == 1 && step57Active == 1 ) {
-            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
+            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
         }
         else if ( step41Active == 1 && step57Active == 1 ) {
-            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
+            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
         }
         // Single combinations
         else if ( step09Active == 1 ) {
-            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
+            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
         }
         else if ( step25Active == 1 ) {
-            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
+            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
         }
         else if ( step41Active == 1 ) {
-            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
+            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
         }
         else if ( step57Active == 1 ) {
-            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
+            [socket writeData:[@"O" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
         }
     } else if ( led == 10 ) {
         led09.backgroundColor = [UIColor clearColor];
@@ -1957,48 +1957,48 @@
         }
         // Triple combinations
         else if ( step10Active == 1 && step26Active == 1 && step42Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
+            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
         }
         else if ( step10Active == 1 && step26Active == 1 && step58Active == 1 ) {
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
+            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
         }
         else if ( step10Active == 1 && step42Active == 1 && step58Active == 1 ) {
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
+            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
         }
         else if ( step26Active == 1 && step42Active == 1 && step58Active == 1 ) {
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
+            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
         }
         // Double combinations
         else if ( step10Active == 1 && step26Active == 1 ) {
-            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
+            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
         }
         else if ( step10Active == 1 && step42Active == 1 ) {
-            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
+            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
         }
         else if ( step10Active == 1 && step58Active == 1 ) {
-            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
+            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
         }
         else if ( step26Active == 1 && step42Active == 1 ) {
-            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
+            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
         }
         else if ( step26Active == 1 && step58Active == 1 ) {
-            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
+            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
         }
         else if ( step42Active == 1 && step58Active == 1 ) {
-            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
+            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
         }
         // Single combinations
         else if ( step10Active == 1 ) {
-            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
+            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
         }
         else if ( step26Active == 1 ) {
-            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
+            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
         }
         else if ( step42Active == 1 ) {
-            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
+            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
         }
         else if ( step58Active == 1 ) {
-            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
+            [socket writeData:[@"0O" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
         }
     } else if ( led == 11 ) {
         led10.backgroundColor = [UIColor clearColor];
@@ -2010,48 +2010,48 @@
         }
         // Triple combinations
         else if ( step11Active == 1 && step27Active == 1 && step43Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
+            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
         }
         else if ( step11Active == 1 && step27Active == 1 && step59Active == 1 ) {
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
+            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
         }
         else if ( step11Active == 1 && step43Active == 1 && step59Active == 1 ) {
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
+            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
         }
         else if ( step27Active == 1 && step43Active == 1 && step59Active == 1 ) {
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
+            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
         }
         // Double combinations
         else if ( step11Active == 1 && step27Active == 1 ) {
-            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
+            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
         }
         else if ( step11Active == 1 && step43Active == 1 ) {
-            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
+            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
         }
         else if ( step11Active == 1 && step59Active == 1 ) {
-            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
+            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
         }
         else if ( step27Active == 1 && step43Active == 1 ) {
-            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
+            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
         }
         else if ( step27Active == 1 && step59Active == 1 ) {
-            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
+            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
         }
         else if ( step43Active == 1 && step59Active == 1 ) {
-            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
+            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
         }
         // Single combinations
         else if ( step11Active == 1 ) {
-            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
+            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
         }
         else if ( step27Active == 1 ) {
-            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
+            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
         }
         else if ( step43Active == 1 ) {
-            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
+            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
         }
         else if ( step59Active == 1 ) {
-            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
+            [socket writeData:[@"O" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
         }
     } else if ( led == 12 ) {
         led11.backgroundColor = [UIColor clearColor];
@@ -2063,48 +2063,48 @@
         }
         // Triple combinations
         else if ( step12Active == 1 && step28Active == 1 && step44Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
+            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
         }
         else if ( step12Active == 1 && step28Active == 1 && step60Active == 1 ) {
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
+            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
         }
         else if ( step12Active == 1 && step44Active == 1 && step60Active == 1 ) {
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
+            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
         }
         else if ( step28Active == 1 && step44Active == 1 && step60Active == 1 ) {
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
+            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
         }
         // Double combinations
         else if ( step12Active == 1 && step28Active == 1 ) {
-            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
+            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
         }
         else if ( step12Active == 1 && step44Active == 1 ) {
-            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
+            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
         }
         else if ( step12Active == 1 && step60Active == 1 ) {
-            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
+            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
         }
         else if ( step28Active == 1 && step44Active == 1 ) {
-            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
+            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
         }
         else if ( step28Active == 1 && step60Active == 1 ) {
-            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
+            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
         }
         else if ( step44Active == 1 && step60Active == 1 ) {
-            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
+            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
         }
         // Single combinations
         else if ( step12Active == 1 ) {
-            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
+            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
         }
         else if ( step28Active == 1 ) {
-            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
+            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
         }
         else if ( step44Active == 1 ) {
-            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
+            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
         }
         else if ( step60Active == 1 ) {
-            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
+            [socket writeData:[@"O" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
         }
     } else if ( led == 13 ) {
         led12.backgroundColor = [UIColor clearColor];
@@ -2116,48 +2116,48 @@
         }
         // Triple combinations
         else if ( step13Active == 1 && step29Active == 1 && step45Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
+            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
         }
         else if ( step13Active == 1 && step29Active == 1 && step61Active == 1 ) {
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
+            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
         }
         else if ( step13Active == 1 && step45Active == 1 && step61Active == 1 ) {
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
+            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
         }
         else if ( step29Active == 1 && step45Active == 1 && step61Active == 1 ) {
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
+            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
         }
         // Double combinations
         else if ( step13Active == 1 && step29Active == 1 ) {
-            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
+            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
         }
         else if ( step13Active == 1 && step45Active == 1 ) {
-            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
+            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
         }
         else if ( step13Active == 1 && step61Active == 1 ) {
-            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
+            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
         }
         else if ( step29Active == 1 && step45Active == 1 ) {
-            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
+            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
         }
         else if ( step29Active == 1 && step61Active == 1 ) {
-            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
+            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
         }
         else if ( step45Active == 1 && step61Active == 1 ) {
-            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
+            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
         }
         // Single combinations
         else if ( step13Active == 1 ) {
-            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
+            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
         }
         else if ( step29Active == 1 ) {
-            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
+            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
         }
         else if ( step45Active == 1 ) {
-            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
+            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
         }
         else if ( step61Active == 1 ) {
-            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
+            [socket writeData:[@"O" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
         }
     } else if ( led == 14 ) {
         led13.backgroundColor = [UIColor clearColor];
@@ -2169,48 +2169,48 @@
         }
         // Triple combinations
         else if ( step14Active == 1 && step30Active == 1 && step46Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
+            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
         }
         else if ( step14Active == 1 && step30Active == 1 && step62Active == 1 ) {
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
+            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
         }
         else if ( step14Active == 1 && step46Active == 1 && step62Active == 1 ) {
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
+            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
         }
         else if ( step30Active == 1 && step46Active == 1 && step62Active == 1 ) {
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
+            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
         }
         // Double combinations
         else if ( step14Active == 1 && step30Active == 1 ) {
-            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
+            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
         }
         else if ( step14Active == 1 && step46Active == 1 ) {
-            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
+            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
         }
         else if ( step14Active == 1 && step62Active == 1 ) {
-            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
+            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
         }
         else if ( step30Active == 1 && step46Active == 1 ) {
-            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
+            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
         }
         else if ( step30Active == 1 && step62Active == 1 ) {
-            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
+            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
         }
         else if ( step46Active == 1 && step62Active == 1 ) {
-            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
+            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
         }
         // Single combinations
         else if ( step14Active == 1 ) {
-            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
+            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
         }
         else if ( step30Active == 1 ) {
-            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
+            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
         }
         else if ( step46Active == 1 ) {
-            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
+            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
         }
         else if ( step62Active == 1 ) {
-            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
+            [socket writeData:[@"O" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
         }
     } else if ( led == 15 ) {
         led14.backgroundColor = [UIColor clearColor];
@@ -2222,48 +2222,48 @@
         }
         // Triple combinations
         else if ( step15Active == 1 && step31Active == 1 && step47Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
+            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
         }
         else if ( step15Active == 1 && step31Active == 1 && step63Active == 1 ) {
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
+            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
         }
         else if ( step15Active == 1 && step47Active == 1 && step63Active == 1 ) {
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
+            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
         }
         else if ( step31Active == 1 && step47Active == 1 && step63Active == 1 ) {
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
+            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
         }
         // Double combinations
         else if ( step15Active == 1 && step31Active == 1 ) {
-            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
+            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
         }
         else if ( step15Active == 1 && step47Active == 1 ) {
-            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
+            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
         }
         else if ( step15Active == 1 && step63Active == 1 ) {
-            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
+            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
         }
         else if ( step31Active == 1 && step47Active == 1 ) {
-            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
+            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
         }
         else if ( step31Active == 1 && step63Active == 1 ) {
-            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
+            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
         }
         else if ( step47Active == 1 && step63Active == 1 ) {
-            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
+            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
         }
         // Single combinations
         else if ( step15Active == 1 ) {
-            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
+            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
         }
         else if ( step31Active == 1 ) {
-            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
+            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
         }
         else if ( step47Active == 1 ) {
-            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
+            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
         }
         else if ( step63Active == 1 ) {
-            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
+            [socket writeData:[@"O" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
         }
     } else if ( led == 16 ) {
         led15.backgroundColor = [UIColor clearColor];
@@ -2275,48 +2275,48 @@
         }
         // Triple combinations
         else if ( step16Active == 1 && step32Active == 1 && step48Active == 1 ) {
-            [socket writeData:[@"A" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
+            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:2];
         }
         else if ( step16Active == 1 && step32Active == 1 && step64Active == 1 ) {
-            [socket writeData:[@"B" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
+            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:3];
         }
         else if ( step16Active == 1 && step48Active == 1 && step64Active == 1 ) {
-            [socket writeData:[@"C" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
+            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:4];
         }
         else if ( step32Active == 1 && step48Active == 1 && step64Active == 1 ) {
-            [socket writeData:[@"D" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
+            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:5];
         }
         // Double combinations
         else if ( step16Active == 1 && step32Active == 1 ) {
-            [socket writeData:[@"E" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
+            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:6];
         }
         else if ( step16Active == 1 && step48Active == 1 ) {
-            [socket writeData:[@"F" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
+            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:7];
         }
         else if ( step16Active == 1 && step64Active == 1 ) {
-            [socket writeData:[@"G" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
+            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:8];
         }
         else if ( step32Active == 1 && step48Active == 1 ) {
-            [socket writeData:[@"H" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
+            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:9];
         }
         else if ( step32Active == 1 && step64Active == 1 ) {
-            [socket writeData:[@"I" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
+            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:10];
         }
         else if ( step48Active == 1 && step64Active == 1 ) {
-            [socket writeData:[@"J" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
+            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:11];
         }
         // Single combinations
         else if ( step16Active == 1 ) {
-            [socket writeData:[@"K" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
+            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:12];
         }
         else if ( step32Active == 1 ) {
-            [socket writeData:[@"L" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
+            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:13];
         }
         else if ( step48Active == 1 ) {
-            [socket writeData:[@"M" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
+            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:14];
         }
         else if ( step64Active == 1 ) {
-            [socket writeData:[@"N" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
+            [socket writeData:[@"O" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:15];
         }
     }
 }
